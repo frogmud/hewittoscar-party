@@ -6,11 +6,11 @@ export const tokens = {
     paper: '#111111',
     elevated: '#1a1a1a',
     border: '#222222',
-    accent: '#f59e0b',
+    accent: '#ef4444',
     text: {
       primary: '#ffffff',
       secondary: '#a0a0a0',
-      muted: '#555555',
+      muted: '#666666',
     },
   },
 };
@@ -54,7 +54,7 @@ export const theme = createTheme({
     body2: {
       fontSize: '0.875rem',
       lineHeight: 1.5,
-      color: '#a0a0a0',
+      color: tokens.colors.text.secondary,
     },
   },
   shape: {
@@ -64,7 +64,8 @@ export const theme = createTheme({
     MuiCssBaseline: {
       styleOverrides: {
         body: {
-          backgroundColor: '#0a0a0a',
+          backgroundColor: tokens.colors.background,
+          scrollBehavior: 'smooth',
         },
       },
     },
@@ -72,7 +73,7 @@ export const theme = createTheme({
       styleOverrides: {
         root: {
           backgroundImage: 'none',
-          border: '1px solid #222222',
+          border: `1px solid ${tokens.colors.border}`,
         },
       },
     },
