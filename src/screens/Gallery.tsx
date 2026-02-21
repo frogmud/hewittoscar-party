@@ -235,10 +235,11 @@ export function Gallery() {
               <Box
                 sx={{
                   display: 'grid',
-                  gridTemplateColumns: 'repeat(4, 1fr)',
-                  gridTemplateRows: 'repeat(3, 1fr)',
+                  gridTemplateColumns: 'repeat(4, minmax(0, 1fr))',
+                  gridTemplateRows: 'repeat(3, minmax(0, 1fr))',
                   gap: 1,
                   aspectRatio: '4 / 3',
+                  overflow: 'hidden',
                 }}
               >
                 {highlightPhotos.map((photo, i) => (
