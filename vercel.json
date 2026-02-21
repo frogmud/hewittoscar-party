@@ -1,6 +1,6 @@
 {
   "framework": "vite",
-  "buildCommand": "tsc -b && vite build",
+  "buildCommand": "vite build",
   "outputDirectory": "dist",
   "rewrites": [
     { "source": "/photos/:path*", "destination": "https://photos.hewittoscar.party/photos/:path*" },
