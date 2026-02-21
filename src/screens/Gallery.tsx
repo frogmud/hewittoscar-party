@@ -104,7 +104,7 @@ export function Gallery() {
       const j = Math.floor(Math.random() * (i + 1));
       [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
     }
-    return shuffled.slice(0, 12);
+    return shuffled.slice(0, 9);
   });
 
   // IntersectionObserver for lazy loading in "all" view
@@ -260,9 +260,6 @@ export function Gallery() {
                       ...(i === 0 && {
                         gridColumn: 'span 2',
                         gridRow: 'span 2',
-                      }),
-                      ...(i === 9 && {
-                        gridColumn: 'span 2',
                       }),
                       '&:hover': {
                         borderColor: tokens.colors.accent,
