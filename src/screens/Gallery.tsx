@@ -250,6 +250,7 @@ export function Gallery() {
                       position: 'relative',
                       overflow: 'hidden',
                       height: '100%',
+                      minHeight: 0,
                       borderRadius: 1,
                       cursor: 'pointer',
                       bgcolor: tokens.colors.paper,
@@ -276,6 +277,8 @@ export function Gallery() {
                       alt={extractFilename(photo.path)}
                       loading="lazy"
                       sx={{
+                        position: 'absolute',
+                        inset: 0,
                         width: '100%',
                         height: '100%',
                         objectFit: 'cover',
