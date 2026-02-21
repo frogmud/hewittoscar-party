@@ -249,6 +249,7 @@ export function Gallery() {
                     sx={{
                       position: 'relative',
                       overflow: 'hidden',
+                      height: '100%',
                       borderRadius: 1,
                       cursor: 'pointer',
                       bgcolor: tokens.colors.paper,
